@@ -8,7 +8,7 @@ function PostView({ post, deletePost }) {
           {post.type === "Text" ? (
             <p>{post.content}</p>
           ) : (
-            <img src={post.content} width="300" alt={post.content} />
+            <img src={post.content} width="300" alt={post.content} style={{padding: "20px 0px"}}/>
           )}
         </div>
         <button name="delete" onClick={deletePost}>
